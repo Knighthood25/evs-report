@@ -72,7 +72,30 @@
   <section id="reports">
     <h2>Latest Reports</h2>
     <p>Coming soon: Explore detailed environmental studies, climate change data, sustainability case studies, and more. This section will be regularly updated with downloadable PDFs and interactive charts.</p>
+    <hr style="margin-top: 2em;">
+
+<div style="text-align: center; font-family: Arial, sans-serif;">
+  <p><strong>👀 Total Views:</strong> <span id="view-counter">2000</span></p>
+  <p><strong>⏱️ Estimated Reading Time:</strong> ~22 minutes</p>
+</div>
+
+<script>
+  // Simulated View Counter (In real hosting, use backend or API to persist this)
+  const viewKey = "enviroViewCount";
+  let views = localStorage.getItem(viewKey);
+
+  if (!views) {
+    views = 2000;
+  } else {
+    views = parseInt(views) + 1;
+  }
+
+  localStorage.setItem(viewKey, views);
+  document.getElementById("view-counter").textContent = views.toLocaleString();
+</script>
+
   </section>
+  
 
  <section id="history">
   <h2>History of the Site</h2>
