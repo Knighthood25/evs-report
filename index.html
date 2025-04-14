@@ -95,6 +95,45 @@
 </script>
 
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <div style="width: 60%; margin: 2em auto;">
+  <canvas id="countryChart"></canvas>
+</div>
+
+<script>
+  const ctx = document.getElementById('countryChart').getContext('2d');
+  const countryChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Britain', 'Germany', 'India', 'USA', 'Canada', 'Australia'],
+      datasets: [{
+        label: 'Visitor Countries',
+        data: [850, 700, 200, 120, 80, 50],
+        backgroundColor: [
+          '#2a9d8f',
+          '#e76f51',
+          '#264653',
+          '#f4a261',
+          '#e9c46a',
+          '#a8dadc'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: '🌍 Visitors by Country'
+        },
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+</script>
+
   
 
  <section id="history">
@@ -118,6 +157,13 @@
   <p><strong>Office Email:</strong> <a href="mailto:jmullen.evn@envirodeutsch.de">jmullen.evn@envirodeutsch.de</a></p>
   <p><strong>Office Phone:</strong> <a href="tel:+493012345678">+49 30 1234 5678</a> (Berlin, Germany)</p>
 </section>
+  <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="John Mullen" style="width: 180px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.2); margin-bottom: 1em;">
+  <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="John Mullen" style="width: 180px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.2); margin-bottom: 1em;">
+<section id="creator">
+  <h2>About the Creator</h2>
+  <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="John Mullen" style="width: 180px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.2); margin-bottom: 1em;">
+  <p><strong>John Mullen</strong> is a climate science communicator, independent researcher, and passionate advocate for ecological literacy. ...
+
 
   <section id="publications">
     <h2>Publications</h2>
